@@ -1,0 +1,194 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+li,a,button {
+	font-family: "Montserrat",sans-serif;
+	font-weight: 500;
+	color: #0f2453;
+	text-decoration:none ;
+}
+header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 30px 10%;
+	background: #0f2453;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	/* margin: 20px; */
+	
+}
+body{
+	margin: 0px;
+    background-size: cover;
+    margin-bottom: 200px;
+}
+.logo{
+	cursor: pointer;
+	margin-right: auto;
+	font-size: 25px;
+	color:#ffce14 ;
+}
+.nav_links {
+	list-style: none;
+}
+.nav_links li{
+	display: inline;
+	padding: 0px 20px;
+}
+.nav_links li a{
+	transition: all 250ms ease-in;
+	color: white;
+}
+.nav_links li a:hover{
+	background: #ffce14;
+	height: 20px;
+    color: black;
+}
+button{
+	padding: 9px 25px;
+	background-color: rgba(0, 136,169,1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: 0.3s ease 0s;
+}
+button:hover{
+    background-color:#ffce14;
+}
+div.gradient {
+    position: relative;
+    left: 15%;
+    width: 70%;
+    height: 10%;
+   
+}
+
+div.gradient .text {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.text{
+    margin-top: 80px;
+    color: #0f2453;
+}
+div.gradient .text h2 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div.account {
+    position: relative;
+    left: 30%;
+    right: 10%;
+    width: 40%; 
+    color: #0f2453;
+    margin-top: 20px;
+    border: 5px #0f2453 solid;
+    border-radius: 10px;
+}
+
+div.account form.signup { 
+    padding: 30px;
+}
+
+ div.account form.signup input {
+    font-weight: bolder;
+    width: 95%;
+    height: 20px;
+    padding: 5px;
+    margin: 10px;
+    border: #bfd3cb 1px solid;
+    border-radius: 4px;
+}
+
+div.account form.signup .displays {
+    display: inline;
+}
+div.account div.displays div.buttons {
+    float: right;
+    overflow: hidden;
+    margin-top: 10px 0;
+}
+
+div.account div.displays div.buttons button{
+    padding: 5px;
+    border: #bfd3cb 1px solid;
+    color: #0f2453;
+    background-color: transparent;
+    font-weight: bolder;
+    border-radius: 2px;
+}
+
+div.account div.displays div.buttons button:hover {
+    color: #bfd3cb;
+    background-color:  #0f2453;
+}
+
+div.account form.signup .account-exist{
+    padding: 10px;
+    margin: 0;
+}
+
+div.account form.signup .account-exist h4,a{
+    margin: 0;
+}
+.account-exist h4 a {
+    text-decoration: none;
+    color: #4169e1;
+}
+.account-exist h4 a:hover {
+    text-decoration: underline;
+} 
+form {
+    font-size: 20px;
+}
+#fname{
+    height: 35px;
+    border-radius: 30px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Media Queries */
+
+@media all and (min-width: 400px) and (max-width: 800px){
+
+    div.account div.displays div.buttons {
+        /* display: inline-block; */
+        /* position: relative; */
+        right: 0px;
+        margin: 5px 10px;
+        padding: 10px;
+        /* border: #0f2453 1px solid; */
+    }
+    div.account div.displays div.buttons button{
+        margin: 3px;
+        width: 100%;
+    }
+    
+    div.account form.signup .account-exist{
+        padding: 10px;
+        margin: 10px;
+        width: fit-content;
+        /* border: #0f2453 1px solid; */
+        position: relative;
+        bottom: 0px;
+        overflow: hidden;
+    }
+    div.account form.signup .account-exist h4,a{
+        margin: 5px;
+    }
+} 

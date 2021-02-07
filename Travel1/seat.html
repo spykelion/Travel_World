@@ -1,0 +1,133 @@
+<html> 
+   <head> 
+      
+
+      <script> 
+         //function that display value 
+         function dis(val) 
+         { 
+             document.getElementById("result").value=val 
+         } 
+           
+         //function that evaluates the digit and return result 
+         function solve() 
+         { 
+             let x = document.getElementById("result").value
+         } 
+           
+         //function that clear the display 
+         function clr() 
+         { 
+             document.getElementById("result").value = "" 
+         } 
+      </script> 
+      <!-- for styling -->
+      <style> 
+          .title{ 
+             margin-bottom: 10px; 
+             text-align:center; 
+             width: 400px; 
+             color:rgb(0, 41, 128); 
+             border: solid black 1px;
+             font-size: x-large;
+             } 
+      
+             input[type="button"] 
+             { 
+             background-color:rgb(0, 51, 128); 
+             color: white; 
+             border: solid black 2px; 
+             width:100% 
+             } 
+      
+             input[type="text"] 
+             { 
+             background-color:white; 
+             border: solid black 2px; 
+             width:100% 
+             } 
+          </style> 
+          <!-- <link rel="stylesheet" href="style2.css"> -->
+          <link rel="stylesheet" href="style.css">
+       </head> 
+       <!-- create table -->
+       <body> 
+         <header>
+            <p class="logo">TravelWorld</p>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#Bus search">Bus search</a></li>
+                    <li><a href="index.html#h1">About Us</a></li>
+                    <li><a href="index.html#h1">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- <a class="cta" href="signin.html"> -->
+               <button class="cta" onclick="window.location = `./signin.html`;">My Account</button>
+            <!-- </a> -->
+        </header>
+        <h1>Seat Selection</h1>
+        <!-- <br/>
+          <br/> -->
+          <table class="seat-table">  
+             <tr> 
+               <td colspan="2"><input type="button" value="driver"></td>
+                <!-- create button and assign value to each button -->
+                <!-- dis("1") will call function dis to display value -->
+                <td><input type="button" value="1" onclick="dis('1')"/> </td> 
+                <td><input type="button" value="2" onclick="dis('2')"/> </td> 
+             </tr> 
+             <tr> 
+                
+                <td><input type="button" value="3" onclick="dis('3')"/> </td> 
+                <td><input type="button" value="4" onclick="dis('4')"/> </td> 
+                <td><input type="button" value="5" onclick="dis('5')"/> </td> 
+                <td><input type="button" value="6" onclick="dis('6')"/> </td> 
+             </tr> 
+             <tr> 
+                
+                <td><input type="button" value="7" onclick="dis('7')"/> </td> 
+                <td><input type="button" value="8" onclick="dis('8')"/> </td> 
+                <td><input type="button" value="9" onclick="dis('9')"/> </td> 
+                <td><input type="button" value="10" onclick="dis('10')"/> </td>
+             </tr> 
+             <tr> 
+                
+                <td><input type="button" value="11" onclick="dis('11')"/> </td> 
+                <td><input type="button" value="12" onclick="dis('12')"/> </td> 
+                <td><input type="button" value="13" onclick="dis('13')"/> </td> 
+                <td><input type="button" value="14" onclick="dis('14')"/> </td> 
+             </tr> 
+             <tr> 
+              
+                <td><input type="button" value="15" onclick="dis('15')"/> </td> 
+                <td><input type="button" value="16" onclick="dis('16')"/> </td> 
+                <td><input type="button" value="17" onclick="dis('17')"/> </td> 
+                <td><input type="button" value="18" onclick="dis('18')"/> </td> 
+                 
+            <tr>
+               <td><input type="button" value="19" onclick="dis('19')"/> </td>
+               <!-- clr() function will call clr to clear all value -->
+               <td><input type="button" id="clear_seat" value="Clear Seat" onclick="clr()"/> </td>
+               <!--for more than one seat-->
+               <td colspan="2"><input type="button" value="," onclick="dis(',')"></td>
+               
+            </tr>
+            <tr>
+               
+                  <td colspan="4"><input type="text" id="result" maxlength="1"/></td> 
+               
+            </tr>
+            <td colspan="4" ><button type="button" id="pay" onclick="alert('No payment methods available now');">Pay</button></td>
+             </tr> 
+            </tr>
+            <td colspan="4" ><button type="button" id="danger" onclick="window.location = `./index.html`;">Cancel</button></td>
+             </tr> 
+          </table> 
+          <form>
+            
+          </form>
+       </body> 
+    </html>    
+
+

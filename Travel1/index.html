@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		
+		<header>
+			<a href="index.html" class="logo"><p class="logo">TravelWorld</p></a>
+			
+			<ul class="nav_links">
+				<a href="index.html"><li class="home">Home</li></a>
+				<a href="#Bus search"><li class="search">Bus search</li></a>
+				<a href="#h1"><li class="about">About Us</li></a>
+				<a href="#h2"><li class="contact">Contact Us</li></a>
+			</ul>
+			
+			<a class="cta" href="signin.html"><button>My Account</button></a>
+		</header>
+		
+		<section id="" class="bus">
+			<div class="parallax">
+				<div class="tittles">
+					<h1>Travel Round the Country</h1>
+					 <p><button ><a href="">Book Now</a></button></p>
+				</div>
+				<!--book now-->
+				<div class="booknow">
+					<h1 id="Bus search">Book Now </h1>
+					<form class="formcontainer">
+						<div class="from">
+							From: <br>
+							<select id="from">
+							<option>Bamenda</optino>
+							<option>Buea</option>
+							<option>Younde</option>
+							<option>Douala</option>
+							<option>Ngoundere</option>
+							<option>Ebolowa</option>
+							<option>Baffousam</option>
+							<option>Ngoundere</option>
+							<option>Maroua</option>
+							<option>Garoua</option>
+
+							</select><br>
+						</div>
+						<div class="to">
+							To: <br>
+							<select id="to">
+							<optio>Bamenda</optio>
+							<option>Buea</option>
+							<option>Younde</option>
+							<option>Douala</optio>
+							<option>Ngoundere</option>
+							<option>Ebolowa</option>
+							<option>Baffousam</option>
+							<option>Ngoundere</option>
+							<option>Maroua</option>
+							<option>Garoua</option>
+							</select><br>
+						</div>
+						<div class="traveldate">
+							Date of Travel:<br>
+							<input type="date" id="traveldate" required><br>
+						</div>
+				        <div class="arrivaldate">
+							Return Date:<br>
+							<input type="date" id="arrivaldate"><br>
+						</div>
+						<div class="submit">
+							<a id="submit" href="available.html">Bus Search</a>
+						</div>
+					</form>
+				</div>
+			</div>	
+		</section>
+		<!--About section-->
+		<section>
+			<div class="parallax1"></div>
+			<div class="about_us">
+				
+				<h1 id="h1">About us</h1>
+
+				<div class="row">
+					<div id="columes">
+						<img src="car4 (2).jpg" style="width:100%">
+							
+					</div>
+					<div id="columes">
+						<p>We are happy to inroduce to you Trave World The latest travel site in Cameroon
+							Travel world is Cameroon's biggest online transport ticketing stage that has changed transport
+							travel in the nation by conveying straight-fowardness to Cameroonians who travel. It was established in 2021
+							by the <b>#travel team</b>. Travel World is a piece of Cameoon driving force towards
+							emergence. our main objective is to reach the needs or every client nation wide with latest
+							cost and unmatchable advantages.
+							Our images speaks for themaelves.
+							Below are a list of our Services
+							Do well to write us on our contact us page about what u think about us 
+							or other services we can add so as to make  your travel expirience the best.
+						</p><br><br>
+						<h3>Our Services</h3>
+						<ul>
+							<li class="us">Bus Ticket</li>
+							<li class="us">Seat Reservation</li>
+							<li class="us">Loggage Transfer</li>
+							<li class="us">Car Rentals</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Contact us-->
+		<section>
+			<div class="parallax2"></div>
+
+			<div class="container">
+				<div style="text-align:center">
+					<h2 id="h2">Contact Us</h2>
+				</div>
+				<div class="row">
+					<div class="column">
+						<img src="bus.jpg" style="width:100%">
+					</div>
+					<div class="column">
+						<form action="/action_page.php">
+						<label for="fname">Full Names</label>
+						<input type="text" id="fname" name="firstname" placeholder="Your name..">
+						<label for="country">Email</label>
+						<input type="email" id="fname" name="lastname" placeholder="Email..">
+						<label for="subject">Subject</label>
+						<textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+						<input type="submit" value="Submit" id="submit">
+						</form>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		<!--footer-->
+		<footer>
+			&copy; Travel World.inc
+			<h1>Contact us:</h1>
+			<ul class="contact">
+				<li class="contact-items"><a href="#" class="fa fa-facebook"></a>Facebook</li>
+				<li class="contact-items"><a href="#" class="fa fa-twitter"></a>Twitter</li>
+				<li class="contact-items"><a href="#" class="fa fa-envelope"></a>Email</li>
+				<li class="contact-items"><a href="#" class="fa fa-whatsapp"></a>Whatsapp</li>
+			</ul>
+			
+		</footer>
+	</body>
+</html>

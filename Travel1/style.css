@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+li,a,button {
+	font-family: "Montserrat",sans-serif;
+	font-weight: 500;
+	color: #0f2453;
+	text-decoration:none ;
+}
+header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 30px 10%;
+	background: #0f2453;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+	/* margin: 20px; */
+	
+}
+
+header * {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+section .about_us .row {
+	border-radius: 5px;
+}
+
+section.bus{
+	margin-top: 50px;
+	position: relative;
+	top: 30px;
+	/* background-color: red; */
+}
+
+/* .for-header {
+	position: fixed;
+	top: 0;
+} */
+body{
+	margin: 0px;
+	background-size: cover;
+}
+.logo{
+	cursor: pointer;
+	margin-right: auto;
+	font-size: 25px;
+	color:#ffce14 ;
+}
+.nav_links {
+	list-style: none;
+}
+.nav_links li{
+	color: white;
+	display: inline;
+	padding: 0px 20px;
+}
+.nav_links a{
+	transition: all 250ms ease-in;
+	color: white;
+}
+.nav_links a:hover{
+	background: #ffce14;
+	height: 20px;
+	color: black;
+}
+.parallax {
+	/* The image used */
+	background-image: url("car1.jpg");
+  
+	/* Set a specific height */
+	min-height: 200px; 
+  
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+button{
+	padding: 9px 25px;
+	background-color: rgba(0, 136,169,1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: 0.3s ease 0s;
+}
+button:hover{
+	background-color:#ffce14;
+}
+.tittles{
+	color:white;
+	text-align: center;
+	width: 50vh;
+	margin: 0 auto;
+	padding-top: 50px;
+	
+}
+.tittles h1{
+	color: white;
+	font-size: 2.5rem;
+	margin-bottom: 0;
+	
+}
+
+.booknow{
+	/* border: 5px solid black; */
+	text-align: center;
+	color: #ffce14;
+	width: 100%;
+	min-height: 100px;
+	border-radius: 10px;
+	background: #0f2453;
+	margin-top: 300px;
+	margin-bottom: 0px;
+}
+
+.formcontainer{
+	text-align: left;
+	color: #ffce14;
+    width: 100%;
+    min-height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+    padding: 5px;
+    grid-template-areas: "from to travel arrive"
+                         "submit submit submit submit"; 
+}
+.form{
+    grid-area: from;
+}
+.to{
+    grid-area: to;
+}
+.traveldate{
+    grid-area: travel;
+}
+.arrivaldate{
+    grid-area: arrive;
+}
+    
+.submit{
+    grid-area: submit;
+}
+
+#from{
+	padding: 4px 15px;
+    width: 90%;
+    border-radius: 45px;
+	font-size: 14px;
+	border-color:#0f2453 ;
+
+}
+#to{
+	padding: 4px 15px;
+    width: 90%;
+    border-radius: 45px;
+	font-size: 14px;
+	border-color:#0f2453 ;
+
+}
+#traveldate{
+	padding: 4px 15px;
+    width: 90%;
+    border-radius: 45px;
+	font-size: 14px;
+	border-color:#0f2453 ;
+}
+#arrivaldate{
+	padding: 4px 15px;
+	width: 90%;
+    border-radius: 45px;
+	font-size: 14px;
+	border-color:#0f2453 ;
+}
+#submit{
+	padding: 9px 25px;
+	border-radius: 30px;
+	border: none;
+	width: 15%;
+	background-color:rgba(0, 136,169,1);
+	color: white;
+	font-size: 14px;
+}
+.parallax1{
+	/* The image used */
+	background-image: url("car.jpg");
+  
+	/* Set a specific height */
+	min-height: 250px; 
+  
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #0f2453;
+}
+/* About us*/
+.about_us{
+	border: 5px solid #0f2453;
+	margin-top: 0px;
+	overflow: hidden;
+	min-height:650px;
+	background-color:white;
+	font-size:25px;
+}
+#h1{
+	text-align: center;
+	padding: 5px;
+	font-weight: bold;
+	color: #0f2453;
+}
+#h2{
+	color:#0f2453;
+	font-size: 40px;
+	background-color: white;
+}
+#columes{
+	float: left;
+	width: 50%;
+	margin-top: 6px;
+	padding: 20px;
+	color: #0f2453;
+} 
+ul{
+	font-weight: 100px;
+	padding-left:50px;
+	padding-top: 20px;
+	justify-content: space-between;
+}
+.us{
+	font-weight: 100px;
+}
+@media screen and (max-width: 600px) {
+	#columes, h3,ul {
+	  width: 100%;
+	  margin-top: 0;
+	}
+}
+  /*contact us*/
+.parallax2{
+	/* The image used */
+	background-image: url("car5.jpg");
+  
+	/* Set a specific height */
+	min-height: 500px; 
+  
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Arial, Helvetica, sans-serif;
+}
+  
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input,select, textarea {
+  border-radius: 30px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#submit{
+	
+	float: center;
+    width: 20%;
+    border-radius: 40px;
+    background-color: #ffce14;;
+	color:black;
+	font-size: 20px;
+}
+
+input[type=submit]:hover {
+  background-color:#ffce14;
+ 
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+	min-height:350px;
+	background-color:white;
+	font-size:25px;
+	float: left;
+	width: 50%;
+	margin-top: 6px;
+	padding: 20px;
+	color: #0f2453;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/*footer section*/
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    background: grey;
+    color: white;
+    border-radius: 50%;
+}
+  
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+  
+.contact{
+    list-style: none;
+	display: block;
+	width: 100%;
+}
+
+.contact li{
+    display: inline;
+	padding: 0px 20px;
+}
+.contact-items{
+	color: white;
+}
+footer{
+	padding: 30px; 
+	min-height: 200px;
+    text-align: center;
+    background-color: rgb(70, 62, 62);
+	color: white;
+	overflow: hidden;
+	/* margin-top: 230px;  */
+}
+
+  
+@media all and (max-width:600px){
+	.bus{
+		overflow: scroll;
+	}
+	header{
+		text-align: center;
+		overflow: hidden;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.25fr 2fr 0.25fr;
+	}
+	.nav_links {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+	ul .home{
+		display: block;
+		width: 100%;
+		min-width: 200px;
+		border: 1px solid #ffce14; 
+		margin: auto;
+	}
+	ul .search{
+		display: block;
+		width: 100%;
+		min-width: 200px;
+		border: 1px solid #ffce14; 
+		margin: auto;
+	}
+	ul .about{
+		display: block;
+		width: 100%;
+		min-width: 200px;
+		border: 1px solid #ffce14; 
+		margin: auto;
+		
+	}
+	ul .contact{
+		display: block;
+		width: 100%;
+		min-width: 200px;
+		border: 1px solid #ffce14; 
+		margin: auto;
+	}
+	.logo .cta {
+		text-align: center;
+	}
+
+	.formcontainer {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: "from" "to" "travel"
+		"arrive" "submit";
+	}
+	.form{
+		grid-area: from;
+	}
+	.to{
+		grid-area: to;
+	}
+	.traveldate{
+		grid-area: travel;
+	}
+	.arrivaldate{
+		grid-area: arrive;
+	}
+		
+	#submit{
+		grid-area: submit;
+		width: 90%;
+	}
+	form.container-bus {
+		display: inline-block;
+	}
+}
+h1 {
+	position: absolute;
+	top: 20%;
+	left: 40%;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bolder;
+}
+table.seat-table {
+	position: relative;
+	top: 30%;
+	left: 40%;
+	bottom: 10%;
+}
+
+table.seat-table #clear_seat,  table.seat-table #danger{
+	background-color: #a31313;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 300;
+	color: #f5deb5;
+}
+
+table.seat-table #clear_seat:hover,  table.seat-table #danger:hover {
+	background-color: #d83232;
+}
+
+table.seat-table #danger, table.seat-table #pay{
+	width: 100%;
+	/* margin: 10px; */
+}
+
+table.seat-table #danger {
+	margin-bottom: 100px;
+}
+
+#result {
+	text-align: center;
+	font-weight: bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
